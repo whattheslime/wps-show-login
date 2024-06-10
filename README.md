@@ -22,7 +22,7 @@ This script include tests for other CVEs on [WPS-Hide-Login WordPress plugin](ht
 
 ## References
 
-- [CVE-2024-2473]()
+- [CVE-2024-2473](https://www.wordfence.com/threat-intel/vulnerabilities/id/fd21c7d3-a5f1-4c3a-b6ab-0a979f070a62)
 - [CVE-2021-24917](https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wps-hide-login/wps-hide-login-190-hidden-login-page-location-disclosure)
 - [CVE-2019-15826](https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wps-hide-login/wps-hide-login-1522-login-page-disclosure-via-actionrp)
 - [CVE-2019-15825](https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wps-hide-login/wps-hide-login-1522-login-page-disclosure-via-referer-header)
